@@ -51,7 +51,7 @@ app.delete('/user/:id',async (req,res)=>{
         await Users.findByIdAndDelete(_id);
         res.status(200).send('deleted !');
     } catch (error) {
-        res.status(400).send(error);
+        res.status(400).send(error)
         
     }
 })
